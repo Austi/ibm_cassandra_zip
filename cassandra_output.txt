@@ -1,0 +1,188 @@
+INFO  13:21:46 Hostname: kraken.cse.eng.auburn.edu
+INFO  13:21:46 Loading settings from file:/home/austin/git/cassandra/conf/cassandra.yaml
+INFO  13:21:47 Node configuration:[authenticator=AllowAllAuthenticator; authorizer=AllowAllAuthorizer; auto_snapshot=true; batch_size_warn_threshold_in_kb=5; batchlog_replay_throttle_in_kb=1024; cas_contention_timeout_in_ms=1000; client_encryption_options=<REDACTED>; cluster_name=Test Cluster; column_index_size_in_kb=64; commitlog_directory=/var/lib/cassandra/commitlog; commitlog_segment_size_in_mb=32; commitlog_sync=periodic; commitlog_sync_period_in_ms=10000; compaction_throughput_mb_per_sec=16; concurrent_counter_writes=32; concurrent_reads=32; concurrent_writes=32; counter_cache_save_period=7200; counter_cache_size_in_mb=null; counter_write_request_timeout_in_ms=5000; cross_node_timeout=false; data_file_directories=[/var/lib/cassandra/data]; disk_failure_policy=stop; dynamic_snitch_badness_threshold=0.1; dynamic_snitch_reset_interval_in_ms=600000; dynamic_snitch_update_interval_in_ms=100; endpoint_snitch=SimpleSnitch; hinted_handoff_enabled=true; hinted_handoff_throttle_in_kb=1024; in_memory_compaction_limit_in_mb=64; incremental_backups=false; index_summary_capacity_in_mb=null; index_summary_resize_interval_in_minutes=60; inter_dc_tcp_nodelay=false; internode_compression=all; key_cache_save_period=14400; key_cache_size_in_mb=null; listen_address=localhost; max_hint_window_in_ms=10800000; max_hints_delivery_threads=2; memtable_allocation_type=heap_buffers; memtable_cleanup_threshold=0.4; memtable_flush_writers=2; native_transport_port=9042; num_tokens=256; partitioner=org.apache.cassandra.dht.Murmur3Partitioner; permissions_validity_in_ms=2000; range_request_timeout_in_ms=10000; read_request_timeout_in_ms=5000; request_scheduler=org.apache.cassandra.scheduler.NoScheduler; request_timeout_in_ms=10000; row_cache_save_period=0; row_cache_size_in_mb=0; rpc_address=localhost; rpc_keepalive=true; rpc_port=9160; rpc_server_type=sync; saved_caches_directory=/var/lib/cassandra/saved_caches; seed_provider=[{class_name=org.apache.cassandra.locator.SimpleSeedProvider, parameters=[{seeds=127.0.0.1}]}]; server_encryption_options=<REDACTED>; snapshot_before_compaction=false; ssl_storage_port=7001; sstable_preemptive_open_interval_in_mb=50; start_native_transport=true; start_rpc=true; storage_port=7000; thrift_framed_transport_size_in_mb=15; tombstone_failure_threshold=100000; tombstone_warn_threshold=1000; trickle_fsync=false; trickle_fsync_interval_in_kb=10240; truncate_request_timeout_in_ms=60000; write_request_timeout_in_ms=2000]
+INFO  13:21:48 DiskAccessMode 'auto' determined to be mmap, indexAccessMode is mmap
+INFO  13:21:48 Global memtable on-heap threshold is enabled at 2048MB
+INFO  13:21:48 Global memtable off-heap threshold is enabled at 2048MB
+INFO  13:21:50 JVM vendor/version: IBM J9 VM/1.8.0
+WARN  13:21:50 Non-Oracle JVM detected.  Some features, such as immediate unmap of compacted SSTables, may not work as intended
+INFO  13:21:50 Heap size: 8589934592/8589934592
+INFO  13:21:50 class storage Non-heap memory: init = 0(0K) used = 14807896(14460K) committed = 15030000(14677K) max = -1(-1K)
+INFO  13:21:50 JIT code cache Non-heap memory: init = 0(0K) used = 0(0K) committed = 0(0K) max = -1(-1K)
+INFO  13:21:50 JIT data cache Non-heap memory: init = 0(0K) used = 2097152(2048K) committed = 2097152(2048K) max = -1(-1K)
+INFO  13:21:50 miscellaneous non-heap storage Non-heap memory: init = 0(0K) used = 3276800(3200K) committed = 31719424(30976K) max = -1(-1K)
+INFO  13:21:50 Java heap Heap memory: init = 8589934592(8388608K) used = 1125648696(1099266K) committed = 8589934592(8388608K) max = 8589934592(8388608K)
+INFO  13:21:50 Classpath: bin/../conf:bin/../build/classes/main:bin/../build/classes/thrift:bin/../lib/airline-0.6.jar:bin/../lib/antlr-3.2.jar:bin/../lib/commons-cli-1.1.jar:bin/../lib/commons-codec-1.2.jar:bin/../lib/commons-lang3-3.1.jar:bin/../lib/commons-math3-3.2.jar:bin/../lib/compress-lzf-0.8.4.jar:bin/../lib/concurrentlinkedhashmap-lru-1.4.jar:bin/../lib/disruptor-3.0.1.jar:bin/../lib/guava-16.0.jar:bin/../lib/high-scale-lib-1.0.6.jar:bin/../lib/jackson-core-asl-1.9.2.jar:bin/../lib/jackson-mapper-asl-1.9.2.jar:bin/../lib/jamm-0.2.6.jar:bin/../lib/javax.inject.jar:bin/../lib/jbcrypt-0.3m.jar:bin/../lib/jline-1.0.jar:bin/../lib/jna-4.0.0.jar:bin/../lib/json-simple-1.1.jar:bin/../lib/libthrift-0.9.1.jar:bin/../lib/logback-classic-1.1.2.jar:bin/../lib/logback-core-1.1.2.jar:bin/../lib/lz4-1.2.0.jar:bin/../lib/metrics-core-2.2.0.jar:bin/../lib/netty-all-4.0.19.Final.jar:bin/../lib/reporter-config-2.1.0.jar:bin/../lib/slf4j-api-1.7.2.jar:bin/../lib/snakeyaml-1.11.jar:bin/../lib/snappy-java-1.1.1.1.jar:bin/../lib/stream-2.5.2.jar:bin/../lib/super-csv-2.1.0.jar:bin/../lib/thrift-server-0.3.5.jar:bin/../lib/jamm-0.2.6.jar:bin/../lib/jamm-0.2.6.jar
+WARN  13:21:50 JNA link failure, one or more native method will be unavailable.
+INFO  13:21:50 Initializing key cache with capacity of 100 MBs.
+INFO  13:21:50 Initializing row cache with capacity of 0 MBs
+INFO  13:21:50 Initializing counter cache with capacity of 50 MBs
+INFO  13:21:50 Scheduling counter cache save to every 7200 seconds (going to save all keys).
+INFO  13:21:50 Initializing system.sstable_activity
+INFO  13:21:56 Initializing system.hints
+INFO  13:21:56 Initializing system.NodeIdInfo
+INFO  13:21:56 Initializing system.compaction_history
+INFO  13:21:56 Opening /var/lib/cassandra/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-26 (540 bytes)
+INFO  13:21:56 Opening /var/lib/cassandra/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-25 (3497 bytes)
+INFO  13:21:56 Initializing system.peers
+INFO  13:21:56 Initializing system.schema_columnfamilies
+INFO  13:21:56 Opening /var/lib/cassandra/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-25 (6559 bytes)
+INFO  13:21:56 Opening /var/lib/cassandra/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-26 (5870 bytes)
+INFO  13:21:56 Initializing system.IndexInfo
+INFO  13:21:56 Initializing system.local
+INFO  13:21:56 Opening /var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-110 (116 bytes)
+INFO  13:21:56 Opening /var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-109 (5702 bytes)
+INFO  13:21:56 Opening /var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-111 (5274 bytes)
+INFO  13:21:56 Initializing system.schema_columns
+INFO  13:21:56 Opening /var/lib/cassandra/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-25 (10798 bytes)
+INFO  13:21:56 Opening /var/lib/cassandra/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-26 (9838 bytes)
+INFO  13:21:56 Initializing system.schema_triggers
+INFO  13:21:56 Initializing system.batchlog
+INFO  13:21:56 Initializing system.schema_usertypes
+INFO  13:21:56 Initializing system.peer_events
+INFO  13:21:56 Initializing system.paxos
+INFO  13:21:56 Initializing system.compactions_in_progress
+INFO  13:21:56 Initializing system.range_xfers
+INFO  13:21:56 Initializing system.schema_keyspaces
+INFO  13:21:56 Opening /var/lib/cassandra/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-26 (135 bytes)
+INFO  13:21:56 Opening /var/lib/cassandra/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-25 (217 bytes)
+INFO  13:21:58 Enqueuing flush of local: 889 (0%) on-heap, 0 (0%) off-heap
+INFO  13:21:58 Writing Memtable-local@-628114913(158 serialized bytes, 3 ops, 0%/0% of on/off-heap limit)
+INFO  13:21:59 Completed flushing /var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-112-Data.db (139 bytes) for commitlog position ReplayPosition(segmentId=1473081716234, position=279)
+INFO  13:21:59 Compacting [SSTableReader(path='/var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-110-Data.db'), SSTableReader(path='/var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-112-Data.db'), SSTableReader(path='/var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-109-Data.db'), SSTableReader(path='/var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-111-Data.db')]
+INFO  13:21:59 Initializing system_traces.sessions
+INFO  13:21:59 Initializing system_traces.events
+INFO  13:21:59 completed pre-loading (5 keys) key cache.
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661533.log, /var/lib/cassandra/commitlog/CommitLog-4-1473081661534.log, /var/lib/cassandra/commitlog/CommitLog-4-1473081661535.log, /var/lib/cassandra/commitlog/CommitLog-4-1473081661536.log, /var/lib/cassandra/commitlog/CommitLog-4-1473081661537.log, /var/lib/cassandra/commitlog/CommitLog-4-1473081661538.log, /var/lib/cassandra/commitlog/CommitLog-4-1473081661539.log, /var/lib/cassandra/commitlog/CommitLog-4-1473081661540.log, /var/lib/cassandra/commitlog/CommitLog-4-1473081661541.log, /var/lib/cassandra/commitlog/CommitLog-4-1473081661542.log, /var/lib/cassandra/commitlog/CommitLog-4-1473081661543.log, /var/lib/cassandra/commitlog/CommitLog-4-1473081661544.log, /var/lib/cassandra/commitlog/CommitLog-4-1473081661545.log, /var/lib/cassandra/commitlog/CommitLog-4-1473081661546.log, /var/lib/cassandra/commitlog/CommitLog-4-1473081661547.log, /var/lib/cassandra/commitlog/CommitLog-4-1473081661548.log, /var/lib/cassandra/commitlog/CommitLog-4-1473081661549.log, /var/lib/cassandra/commitlog/CommitLog-4-1473081661550.log, /var/lib/cassandra/commitlog/CommitLog-4-1473081661551.log, /var/lib/cassandra/commitlog/CommitLog-4-1473081661552.log, /var/lib/cassandra/commitlog/CommitLog-4-1473081661553.log, /var/lib/cassandra/commitlog/CommitLog-4-1473081661554.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661533.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661533.log (CL version 4, messaging version 8)
+INFO  13:21:59 Compacted 4 sstables to [/var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-113,].  11,231 bytes to 5,707 (~50% of original) in 260ms = 0.020933MB/s.  4 total partitions merged to 1.  Partition merge counts were {4:1, }
+INFO  13:21:59 Finished reading /var/lib/cassandra/commitlog/CommitLog-4-1473081661533.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661534.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661534.log (CL version 4, messaging version 8)
+INFO  13:21:59 Finished reading /var/lib/cassandra/commitlog/CommitLog-4-1473081661534.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661535.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661535.log (CL version 4, messaging version 8)
+INFO  13:21:59 Finished reading /var/lib/cassandra/commitlog/CommitLog-4-1473081661535.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661536.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661536.log (CL version 4, messaging version 8)
+INFO  13:21:59 Finished reading /var/lib/cassandra/commitlog/CommitLog-4-1473081661536.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661537.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661537.log (CL version 4, messaging version 8)
+INFO  13:21:59 Finished reading /var/lib/cassandra/commitlog/CommitLog-4-1473081661537.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661538.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661538.log (CL version 4, messaging version 8)
+INFO  13:21:59 Finished reading /var/lib/cassandra/commitlog/CommitLog-4-1473081661538.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661539.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661539.log (CL version 4, messaging version 8)
+INFO  13:21:59 Finished reading /var/lib/cassandra/commitlog/CommitLog-4-1473081661539.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661540.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661540.log (CL version 4, messaging version 8)
+INFO  13:21:59 Finished reading /var/lib/cassandra/commitlog/CommitLog-4-1473081661540.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661541.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661541.log (CL version 4, messaging version 8)
+INFO  13:21:59 Finished reading /var/lib/cassandra/commitlog/CommitLog-4-1473081661541.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661542.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661542.log (CL version 4, messaging version 8)
+INFO  13:21:59 Finished reading /var/lib/cassandra/commitlog/CommitLog-4-1473081661542.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661543.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661543.log (CL version 4, messaging version 8)
+INFO  13:21:59 Finished reading /var/lib/cassandra/commitlog/CommitLog-4-1473081661543.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661544.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661544.log (CL version 4, messaging version 8)
+INFO  13:21:59 Finished reading /var/lib/cassandra/commitlog/CommitLog-4-1473081661544.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661545.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661545.log (CL version 4, messaging version 8)
+INFO  13:21:59 Finished reading /var/lib/cassandra/commitlog/CommitLog-4-1473081661545.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661546.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661546.log (CL version 4, messaging version 8)
+INFO  13:21:59 Finished reading /var/lib/cassandra/commitlog/CommitLog-4-1473081661546.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661547.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661547.log (CL version 4, messaging version 8)
+INFO  13:21:59 Finished reading /var/lib/cassandra/commitlog/CommitLog-4-1473081661547.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661548.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661548.log (CL version 4, messaging version 8)
+INFO  13:21:59 Finished reading /var/lib/cassandra/commitlog/CommitLog-4-1473081661548.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661549.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661549.log (CL version 4, messaging version 8)
+INFO  13:21:59 Finished reading /var/lib/cassandra/commitlog/CommitLog-4-1473081661549.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661550.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661550.log (CL version 4, messaging version 8)
+INFO  13:21:59 Finished reading /var/lib/cassandra/commitlog/CommitLog-4-1473081661550.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661551.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661551.log (CL version 4, messaging version 8)
+INFO  13:21:59 Finished reading /var/lib/cassandra/commitlog/CommitLog-4-1473081661551.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661552.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661552.log (CL version 4, messaging version 8)
+INFO  13:21:59 Finished reading /var/lib/cassandra/commitlog/CommitLog-4-1473081661552.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661553.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661553.log (CL version 4, messaging version 8)
+INFO  13:21:59 Finished reading /var/lib/cassandra/commitlog/CommitLog-4-1473081661553.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661554.log
+INFO  13:21:59 Replaying /var/lib/cassandra/commitlog/CommitLog-4-1473081661554.log (CL version 4, messaging version 8)
+INFO  13:21:59 Finished reading /var/lib/cassandra/commitlog/CommitLog-4-1473081661554.log
+INFO  13:21:59 Enqueuing flush of compaction_history: 2438 (0%) on-heap, 0 (0%) off-heap
+INFO  13:21:59 Enqueuing flush of schema_columnfamilies: 104910 (0%) on-heap, 0 (0%) off-heap
+INFO  13:21:59 Writing Memtable-compaction_history@2123770387(458 serialized bytes, 18 ops, 0%/0% of on/off-heap limit)
+INFO  13:21:59 Writing Memtable-schema_columnfamilies@-1791160848(26507 serialized bytes, 443 ops, 0%/0% of on/off-heap limit)
+INFO  13:21:59 Enqueuing flush of peers: 144 (0%) on-heap, 0 (0%) off-heap
+INFO  13:21:59 Enqueuing flush of schema_keyspaces: 487 (0%) on-heap, 0 (0%) off-heap
+INFO  13:21:59 Enqueuing flush of schema_columns: 246456 (0%) on-heap, 0 (0%) off-heap
+INFO  13:21:59 Completed flushing /var/lib/cassandra/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-27-Data.db (337 bytes) for commitlog position ReplayPosition(segmentId=1473081716234, position=696)
+INFO  13:21:59 Writing Memtable-peers@1365848186(0 serialized bytes, 1 ops, 0%/0% of on/off-heap limit)
+INFO  13:22:00 Completed flushing /var/lib/cassandra/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-Data.db (30 bytes) for commitlog position ReplayPosition(segmentId=1473081716234, position=696)
+INFO  13:22:00 Writing Memtable-schema_keyspaces@1328608304(113 serialized bytes, 4 ops, 0%/0% of on/off-heap limit)
+INFO  13:22:00 Completed flushing /var/lib/cassandra/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-27-Data.db (135 bytes) for commitlog position ReplayPosition(segmentId=1473081716234, position=696)
+INFO  13:22:00 Writing Memtable-schema_columns@1588934795(42983 serialized bytes, 820 ops, 0%/0% of on/off-heap limit)
+INFO  13:22:00 Completed flushing /var/lib/cassandra/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-27-Data.db (5863 bytes) for commitlog position ReplayPosition(segmentId=1473081716234, position=696)
+INFO  13:22:00 Completed flushing /var/lib/cassandra/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-27-Data.db (9818 bytes) for commitlog position ReplayPosition(segmentId=1473081716234, position=696)
+INFO  13:22:00 Log replay complete, 8 replayed mutations
+INFO  13:22:01 Cassandra version: 2.1.0-rc1-SNAPSHOT
+INFO  13:22:01 Thrift API version: 19.39.0
+INFO  13:22:01 CQL supported versions: 2.0.0,3.1.7 (default: 3.1.7)
+INFO  13:22:01 Initializing index summary manager with a memory pool size of 409 MB and a resize interval of 60 minutes
+INFO  13:22:01 Loading persisted ring state
+INFO  13:22:01 Starting up server gossip
+INFO  13:22:01 Enqueuing flush of local: 1603 (0%) on-heap, 0 (0%) off-heap
+INFO  13:22:01 Writing Memtable-local@1564146703(301 serialized bytes, 10 ops, 0%/0% of on/off-heap limit)
+INFO  13:22:01 Completed flushing /var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-114-Data.db (274 bytes) for commitlog position ReplayPosition(segmentId=1473081716234, position=89988)
+INFO  13:22:01 Starting Messaging Service on port 7000
+INFO  13:22:01 Using saved tokens [-1040542688234601940, -1088750519391737876, -1172325274319984716, -124420284816424389, -1311527385807114891, -1357323515187894099, -1412882371504667666, -1414538060251496386, -1477163224147330457, -1516271647277007934, -1538168736073298876, -1554321481460666650, -1568410373271152680, -1668355552504386534, -1724629202148023283, -1728028680426936546, -175645859653311910, -1830257977941260443, -1863062501562226460, -1981536575063775445, -2008808251481914485, -2035123599042490253, -2108443946840083506, -2147896388123233078, -2200155715376719044, -233019003162710996, -2385031637988219118, -2396392244211058692, -2404469831373231319, -240447328158502566, -245344280308105104, -2597711744114874506, -2701785878192661902, -2836084250061128234, -288960174763552447, -290202970336407484, -290232529506167823, -2991672975905491266, -3067191982433060834, -3436101913478327919, -3497032425212644215, -3623349127000878353, -3634584765289989827, -3779306920143746264, -3781668780493070500, -3959103222424607950, -4040796343825064769, -4051460296564324485, -4063874008198154334, -4101181617892671188, -4261247234921747797, -4264729949264568781, -430536617418466307, -4320781244882498099, -4347673555866230323, -4561512987368813226, -4644445096605834783, -4651167693071810816, -4700632705566773448, -4754126215047871272, -476727116987778875, -4810299206123916666, -4976295343056976780, -5110371000826571063, -5173948281605955099, -5347255847403186066, -5439544331626774500, -5470687086060424846, -5574592401634875897, -5586519169704935819, -562568496779310434, -5750007740703544211, -5825595999815742464, -5846921292239808442, -5878174734373982931, -5963870998085648068, -5994952985387153743, -6009166599955683569, -6078319214348164782, -6146761431561414784, -6170525554144192678, -6245466284433027716, -6304448921752822115, -6314936424952886345, -6361526475105465465, -6454119858433170442, -6492139273672708243, -6519951982220484898, -6644523742003232978, -66696589658397870, -6700271466579916256, -6751238648415524823, -6823073853259712550, -6876822970446868072, -6882703656750103732, -6887170127875858846, -6912129160728896030, -6953622587415112952, -7069657568129161874, -708749076253119896, -7108092076477981144, -7120992225440116126, -7171709083241384449, -7175427020692545193, -7192970056404011942, -7224700298282201763, -731932597309176256, -7367521755320414224, -7453615609149155749, -7464709549138631080, -7580332089029684290, -7749614609911282661, -7813684181075179875, -7850636294943435073, -7909396243246356047, -8025566349907214936, -8222407317809783066, -8241966551551560182, -8307371919509712994, -8639798188357293944, -8653341268586483015, -8841509942972450743, -8930492665210077372, -8933493308281042721, -8962812170105897722, -9045415660139227850, -9154329257357798917, -949393312025115897, -999352539711174539, 1173665406189382274, 1263892171939879337, 1301157478236940258, 1383470304772515123, 138425033738618579, 1434391550729484327, 1485079384729338981, 1504316899973267441, 1549631476762929265, 1563190807125402247, 1633869724972082303, 1666740021204074254, 167574142461588172, 1809390235791396627, 1817712468192370334, 1828255882609641437, 192201394000768302, 1927429993296923625, 1933209963168483674, 1950191559694215964, 2250902223963300932, 2283762811484530648, 2309071207397950205, 2535346827666480172, 2536624857610771857, 2541932012544775162, 2579576853835618995, 2665044866258392655, 2675340469085655901, 2749771648104728760, 2809127079242943916, 2838290622842701446, 2847832471322812128, 290082480786025174, 2914439237551819207, 2923762548961865902, 2936876824403665746, 2945275148224527444, 3073893074411658148, 3175272415584120515, 3204288970979961692, 3248528308827100887, 3299492743771586054, 3310618323772977764, 3328114635680014073, 3446105246368341828, 3522730815521816203, 3576395948168748868, 3641803320683902683, 3752697208493851969, 3774572937393012655, 3791521631512227714, 3941667411312903798, 3955304523333567882, 3979292817143316953, 4050749393671009213, 4055137468958193984, 4066418215376298507, 4086712601028826930, 4129502738356870236, 4234933993020588801, 425228556834271229, 4259130628222893411, 4266871163663910720, 431892265121106723, 4330241986266546623, 4363974130504145692, 4388053638311605857, 445274048060976414, 4457769485905745485, 4463054365033972462, 4486976751873475349, 4548379924042090489, 4564395162407883963, 4588292246392939159, 4663985367962059407, 4716087737199347879, 4749651410664920954, 4762734194893066926, 4968961345225459185, 5080798745087069495, 5089705028185552790, 5165054491621054030, 5328339476805864830, 5566723624342140810, 5703632946383084306, 5727723407835939531, 5776757503766988724, 5939781695677491033, 6143643581557598860, 6270599376410238164, 6482566174568974417, 6495608692891205244, 6620665246199764759, 6641929806749554249, 6698902618810376798, 6741922346460450851, 7023487116189930824, 7282432813496235286, 7399851380683115042, 7422923081149797198, 7683324745438630499, 7687912026242959665, 7796469632970989536, 7799726889782831920, 789153319877971419, 7958227560997410247, 801026783828687396, 8055333341624479207, 8077347587647876382, 8092505106191147518, 8158128460255173365, 8187032867045357292, 8324267025435906952, 8350722641653621361, 8548917028115137517, 8593097179513547416, 8598880969510497881, 8644258273057741573, 8722343341494093331, 881388549473547843, 8850397536772014224, 8975576254793319553, 9039508663755203788, 9140954804297813361, 9147264106477946010, 954334665115050937]
+INFO  13:22:01 Enqueuing flush of local: 723 (0%) on-heap, 0 (0%) off-heap
+INFO  13:22:01 Writing Memtable-local@-1837473977(104 serialized bytes, 4 ops, 0%/0% of on/off-heap limit)
+INFO  13:22:01 Completed flushing /var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-115-Data.db (116 bytes) for commitlog position ReplayPosition(segmentId=1473081716234, position=90231)
+INFO  13:22:01 Enqueuing flush of local: 54638 (0%) on-heap, 0 (0%) off-heap
+INFO  13:22:01 Writing Memtable-local@-766806132(8557 serialized bytes, 259 ops, 0%/0% of on/off-heap limit)
+INFO  13:22:01 Completed flushing /var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-116-Data.db (5274 bytes) for commitlog position ReplayPosition(segmentId=1473081716234, position=102220)
+INFO  13:22:01 Compacting [SSTableReader(path='/var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-116-Data.db'), SSTableReader(path='/var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-115-Data.db'), SSTableReader(path='/var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-113-Data.db'), SSTableReader(path='/var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-114-Data.db')]
+INFO  13:22:02 Compacted 4 sstables to [/var/lib/cassandra/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-117,].  11,371 bytes to 5,725 (~50% of original) in 131ms = 0.041678MB/s.  4 total partitions merged to 1.  Partition merge counts were {4:1, }
+INFO  13:22:02 Node localhost/127.0.0.1 state jump to normal
+ERROR 13:22:04 Exception encountered during startup
+java.lang.IllegalStateException: failed to create a child event loop
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:68) ~[netty-all-4.0.19.Final.jar:4.0.19.Final]
+	at io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:49) ~[netty-all-4.0.19.Final.jar:4.0.19.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:61) ~[netty-all-4.0.19.Final.jar:4.0.19.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:52) ~[netty-all-4.0.19.Final.jar:4.0.19.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:44) ~[netty-all-4.0.19.Final.jar:4.0.19.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:36) ~[netty-all-4.0.19.Final.jar:4.0.19.Final]
+	at org.apache.cassandra.transport.Server.run(Server.java:141) ~[main/:na]
+	at org.apache.cassandra.transport.Server.start(Server.java:112) ~[main/:na]
+	at org.apache.cassandra.service.CassandraDaemon.start(CassandraDaemon.java:402) [main/:na]
+	at org.apache.cassandra.service.CassandraDaemon.activate(CassandraDaemon.java:468) [main/:na]
+	at org.apache.cassandra.service.CassandraDaemon.main(CassandraDaemon.java:544) [main/:na]
+Caused by: io.netty.channel.ChannelException: failed to open a new selector
+	at io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:128) ~[netty-all-4.0.19.Final.jar:4.0.19.Final]
+	at io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:120) ~[netty-all-4.0.19.Final.jar:4.0.19.Final]
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:87) ~[netty-all-4.0.19.Final.jar:4.0.19.Final]
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:64) ~[netty-all-4.0.19.Final.jar:4.0.19.Final]
+	... 10 common frames omitted
+Caused by: java.io.IOException: Too many open files
+	at sun.nio.ch.IOUtil.makePipe(Native Method) ~[na:1.8.0-internal]
+	at sun.nio.ch.EPollSelectorImpl.<init>(EPollSelectorImpl.java:77) ~[na:1.8.0-internal]
+	at sun.nio.ch.EPollSelectorProvider.openSelector(EPollSelectorProvider.java:48) ~[na:1.8.0-internal]
+	at io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:126) ~[netty-all-4.0.19.Final.jar:4.0.19.Final]
+	... 13 common frames omitted
+Exception encountered during startup: failed to create a child event loop
+INFO  13:22:04 Announcing shutdown
+INFO  13:22:06 Waiting for messaging service to quiesce
+INFO  13:22:06 MessagingService has terminated the accept() thread
